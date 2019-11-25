@@ -1,0 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper{
+    width: 1000px;
+    margin: 10px auto;    
+    background: #F1F1F1;
+    padding: 20px;
+    text-align: center;
+}
+
+.chat_wraper{
+    width: 70%;
+    margin: 10px auto;
+}
+
+#chat{
+    min-height: 500px;
+    border: 1px solid #B3B3B3;
+    padding: 10px;
+    background: url(../images/fondo.jpg);
+    background-size: 70%;
+}
+
+.textarea{
+    width: 94%;
+    border: 1px solid #B3B3B3;
+    outline: none;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 70px;
+    height: 20px;
+    resize: vertical ;
+    overflow:hidden
+}
