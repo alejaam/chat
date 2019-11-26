@@ -12,8 +12,23 @@
                 echo 1;
                 exit();
             }
-            break;
-        
+        break;
+        case 'getMessages':
+            $query = $db->prepare("SELECT * FROM messages");
+            $run = $query->execute();
+            $response = $query->fetchAll(PDO::FETCH_OBJ);
+            
+            $chat = "";
+            foreach ($response as $message) {
+                // $chat .= $message->message."<br />";
+
+                $chat .= "<div class='single-message'>
+                            <strong>" . $message->user . ": </strong>" . $message->message ."
+                            <span>" .date("m-d-Y h:i a", strtotime($message->date)) . " </span>
+                            </div>";
+            }
+            echo $chat;
+        break;
         default:
             # code...
             break;

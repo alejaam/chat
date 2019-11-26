@@ -8,9 +8,12 @@
     margin: 10px auto;    
     background: #F1F1F1;
     padding: 20px;
-    text-align: center;
 }
 
+#wrapper h1{
+    text-align: center;
+    margin: 2px solid red;
+}
 .chat_wraper{
     width: 70%;
     margin: 10px auto;
@@ -34,4 +37,13 @@
     height: 20px;
     resize: vertical ;
     overflow:hidden
+}
+
+.single-message{
+    padding: 5px 0px;
+    border-bottom: 1px solid #B3B3B3;
+}
+
+.single-message span{
+    float: right;
 }

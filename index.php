@@ -25,6 +25,15 @@
         </div>
     </div>
     <script>
+        
+        loadChat();
+
+        function loadChat(){
+            $.post("handlers/messages.php?action=getMessages", function(response){
+               $("#chat").html(response);
+            });
+        }
+
         $(".textarea").keyup((e) => {
             if(e.which == 13){
                 $("form").submit();
